@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.container {
+    background-image:conic-gradient(rgb(247, 202, 202), rgb(252, 252, 188), rgb(208, 252, 214));
+    /* margin: 0 75px; */
+    /* border: 2px solid black; */
+}
+
+.head {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.nav {
+    background-color: aliceblue;
+    text-align: center;
+    position: fixed;
+    border: 2px solid rgb(238, 99, 99);
+    width: 99.7%;
+    height: 85px;
+    margin-top: -86px;
+    /* margin-left: 12px; */
+
+}
+
+.nav ul {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+.nav ul li a:hover {
+ 
+ border-left: 2px  solid black;
+ border-right: 2px  solid black;
+}
+
+.logo1{
+    /* z-index: 2; */
+    border: 2px solid black;
+}
+.outerflex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 10px;
+
+}
+
+.outer {
+    transition: 0.3s;
+    box-shadow: 5px 5px 5px;
+    margin: 20px;
+    border: 2px solid black;
+    width: 280px;
+
+}
+.outer:hover{
+    box-shadow: 5px 5px 5px red;
+    
+}
+
+
+.img {
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.text {
+    padding: 2px 16px;
+}
+
+.templelist {
+    /* border: 2px solid black; */
+    margin: 10px 10px;
+}
+
+.templelist ol a {
+    text-decoration: none;
+    color: black;
+}
+
+.outertemple {
+    display: flex;
+    /* border: 5px solid yellow; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.anim{
+    /* animation-name: example;
+    animation-duration: 3s; */
+    animation: example 8s ease-in;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: 3;
+   
+}
+@keyframes example {
+    /* 0%   { left:0px; top:0px;}
+    25% { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  {left:0px; top:200px;} */
+
+   
+    80% { 
+        transform: translateX(80%);
+    }
+    
+}
+.btn{
+    /* border: 2px solid yellow; */
+    margin: 10px;
+
+    font-size: medium;
+
+}
+
+.card {
+
+    box-shadow: 5px 5px 5px;
+    margin: 15px;
+}
+
+.card img {
+    height: 350px;
+    width: 350px;
+}
+
+.map {
+    text-align: center;
+    margin: 10px;
+}
+
+@media all and (max-width:480px) {
+    .nav{
+        width: 99%;
+       
+    }
+    
+    .nav ul{
+        display: inline;
+        float: left;
+
+    }
+    .map iframe{
+        width:350px;
+        height:350px ;
+    }
+}
+
+@media only screen and (max-width:680px){
+    .nav{
+        width: 99%;
+    }
+}
